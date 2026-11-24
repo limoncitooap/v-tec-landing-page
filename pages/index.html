@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="V-TEC: descubre qué modelo de vehículo usado encaja con tus prioridades, tu rutina y tu presupuesto real en el Perú.">
+  <title>V-TEC | Encuentra el vehículo que realmente encaja contigo</title>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Cabecera / Navegación Global (HU-19) -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="V-TEC Inicio">
+        <span class="brand-badge" aria-hidden="true">V</span>
+        <span class="brand-name">V-TEC</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#como-funciona" class="nav-link">¿Cómo funciona?</a></li>
+          <li><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+          <li><a href="#faq" class="nav-link">Preguntas frecuentes</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button type="button" class="btn btn-secondary btn-sm hidden" id="btn-open-saved">
+          Mi resultado guardado
+        </button>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="mobile-menu-btn"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- Hero Section (HU-21) -->
+    <section class="hero-section" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">TU PRÓXIMO AUTO, MEJOR ELEGIDO</p>
+          <h1 id="hero-title" class="hero-title">Encuentra el vehículo que realmente encaja contigo.</h1>
+          <p class="hero-subtitle">
+            Antes de perder horas en portales llenos de jerga técnica, organiza tus prioridades y tu presupuesto real en soles. V-TEC traduce lo que necesitas en 3 modelos concretos con soporte verificado en Perú.
+          </p>
+          <div class="hero-actions">
+            <a href="#diagnostico" class="btn btn-primary" id="btn-start-hero">
+              Iniciar diagnóstico <span aria-hidden="true">→</span>
+            </a>
+            <a href="#como-funciona" class="btn btn-secondary">
+              Ver cómo funciona
+            </a>
+          </div>
+          <p class="hero-meta">Sin registro obligatorio · Imparcial · Basado en el mercado peruano</p>
+        </div>
+
+        <aside class="hero-card" aria-label="Ejemplo de diagnóstico V-TEC">
+          <div class="hero-card-header">
+            <span class="badge badge-mint">Ejemplo de resultado</span>
+            <span class="badge badge-primary">97% compatible</span>
+          </div>
+          <p class="hero-card-years">1996 – 2002</p>
+          <h2 class="hero-card-model">Toyota Land Cruiser Prado J90</h2>
+          <p class="hero-card-price">S/ 25,000 – S/ 40,000</p>
+          <div class="compat-bar" aria-hidden="true">
+            <div class="compat-bar-fill high" style="width: 97%;"></div>
+          </div>
+          <ul class="hero-card-specs">
+            <li><strong>Rendimiento:</strong> 24 – 28 km/gal</li>
+            <li><strong>Soporte en Perú:</strong> Alto (Lima y provincias)</li>
+            <li><strong>Perfil ideal:</strong> Rutas exigentes y carga</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Sección Explicativa: Cómo funciona (HU-22) -->
+    <section class="section how-section" id="como-funciona" aria-labelledby="how-title">
+      <div class="container">
+        <p class="eyebrow">PROCESO TRANSPARENTE</p>
+        <h2 id="how-title" class="section-title">¿Cómo funciona V-TEC?</h2>
+        <p class="section-subtitle">
+          Cuatro pasos simples para pasar de ideas difusas a criterios claros antes de abrir un portal de clasificados.
+        </p>
+
+        <div class="steps-grid">
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14v-5l-2-4H7l-2 4v5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>
+            </div>
+            <span class="step-num">01</span>
+            <h3>Elige tu carrocería</h3>
+            <p>Descarta desde el inicio formatos incompatibles con tu rutina diaria o tu trabajo.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+            </div>
+            <span class="step-num">02</span>
+            <h3>Define tus prioridades</h3>
+            <p>Selecciona de 1 a 3 atributos cotidianos y ajusta qué tan importante es cada uno.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+            </div>
+            <span class="step-num">03</span>
+            <h3>Ingresa tu presupuesto</h3>
+            <p>Comparamos tu monto en soles con rangos reales del mercado peruano (±15%).</p>
+          </article>
+
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <span class="step-num">04</span>
+            <h3>Recibe tu perfil vehicular</h3>
+            <p>Obtén 3 modelos recomendados, su ficha técnica, soporte local y alertas claras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motor de Diagnóstico / Wizard Interactivo (HU-01 a HU-18, HU-23, HU-26, HU-30, HU-31, HU-39, HU-40, HU-42, HU-43, HU-44) -->
+    <section class="section wizard-section" id="diagnostico" aria-labelledby="wizard-heading">
+      <div class="container">
+        <div class="wizard-shell">
+          <!-- Barra superior del Wizard (HU-05, HU-40) -->
+          <div class="wizard-topbar" id="wizard-topbar">
+            <div class="progress-wrapper" aria-live="polite">
+              <span class="progress-label" id="wizard-step-label">PASO 1 DE 3</span>
+              <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" id="wizard-progress-bar">
+                <div class="progress-fill" id="wizard-progress-fill" style="width: 33.33%;"></div>
+              </div>
+            </div>
+            <button type="button" class="btn-text" id="btn-reset-wizard">
+              Reiniciar diagnóstico
+            </button>
+          </div>
+
+          <!-- PASO 1: Selección de Carrocería (HU-01) -->
+          <div class="wizard-view" id="step-1" role="region" aria-labelledby="wizard-heading">
+            <div class="wizard-header">
+              <p class="eyebrow">EMPECEMOS POR LO ESENCIAL</p>
+              <h2 id="wizard-heading" class="wizard-title">¿Qué tipo de carrocería estás buscando?</h2>
+              <p class="wizard-desc">Elige la opción que mejor se adapta a tu día a día.</p>
+            </div>
+
+            <div class="body-grid" role="radiogroup" aria-label="Tipos de carrocería" id="body-options">
+              <!-- Renderizado dinámico accesible por JS -->
+            </div>
+
+            <p class="form-error" id="step-1-error" role="alert" aria-live="assertive"></p>
+
+            <div class="wizard-footer">
+              <span class="footer-hint" id="step-1-hint">Selecciona una carrocería para continuar</span>
+              <button type="button" class="btn btn-primary" id="btn-step-1-next">
+                Continuar <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PASO 2: Selección de Prioridades (HU-04, HU-06, HU-07, HU-08, HU-09) -->
+          <div class="wizard-view hidden" id="step-2" role="region" aria-labelledby="step-2-title">
+            <div class="wizard-header wizard-header-split">
+              <div>
+                <p class="eyebrow">AHORA, LO QUE MÁS TE IMPORTA</p>
+                <h2 id="step-2-title" class="wizard-title">Selecciona tus prioridades</h2>
+                <p class="wizard-desc">Elige de 1 a 3 opciones y asigna cuánto te importa cada una.</p>
+              </div>
+              <div class="counter-pill" id="priority-counter" aria-live="polite">
+                <strong>0</strong> de 3 seleccionadas
+              </div>
+            </div>
+
+            <div class="priority-grid" id="priority-options">
+              <!-- Renderizado dinámico de las 5 tarjetas por JS -->
+            </div>
+
+            <div class="summary-bar hidden" id="priority-summary" aria-live="polite">
+              <span class="summary-label">Prioridades elegidas:</span>
+              <div class="summary-chips" id="priority-summary-chips"></div>
+            </div>
+
+            <p class="form-error" id="step-2-error" role="alert" aria-live="assertive"></p>
+
+            <div class="wizard-footer">
+              <button type="button" class="btn-text" id="btn-step-2-back">
+                <span aria-hidden="true">←</span> Volver
+              </button>
+              <button type="button" class="btn btn-primary" id="btn-step-2-next">
+                Confirmar y continuar <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PASO 3: Ingreso de Presupuesto Real (HU-10, HU-18) -->
+          <div class="wizard-view hidden" id="step-3" role="region" aria-labelledby="step-3-title">
+            <div class="wizard-header text-center">
+              <p class="eyebrow">ÚLTIMO PASO</p>
+              <h2 id="step-3-title" class="wizard-title">¿Cuál es tu presupuesto real disponible?</h2>
+              <p class="wizard-desc">Usaremos este monto para encontrar opciones que sí puedes considerar.</p>
+            </div>
+
+            <div class="budget-card">
+              <label for="budget-number" class="budget-eyebrow">TU PRESUPUESTO EN SOLES</label>
+              <div class="budget-display-row">
+                <span class="currency-prefix" aria-hidden="true">S/</span>
+                <input
+                  type="number"
+                  id="budget-number"
+                  class="budget-number-input"
+                  min="5000"
+                  max="120000"
+                  step="500"
+                  value="35000"
+                  aria-label="Presupuesto exacto en soles"
+                >
+              </div>
+
+              <div class="slider-wrapper">
+                <input
+                  type="range"
+                  id="budget-slider"
+                  class="range-slider"
+                  min="5000"
+                  max="80000"
+                  step="1000"
+                  value="35000"
+                  aria-label="Deslizador de presupuesto en soles"
+                >
+                <div class="slider-limits">
+                  <span>S/ 5,000</span>
+                  <span>S/ 80,000+</span>
+                </div>
+              </div>
+
+              <div class="margin-callout">
+                <span class="callout-icon" aria-hidden="true">±</span>
+                <div>
+                  <strong>Buscamos con margen inteligente</strong>
+                  <p id="margin-preview-text">Evaluaremos opciones con hasta 15% de flexibilidad (S/ 29,750 – S/ 40,250) para no dejar fuera una buena oportunidad.</p>
+                </div>
+              </div>
+
+              <p class="form-error" id="step-3-error" role="alert" aria-live="assertive"></p>
+            </div>
+
+            <div class="wizard-footer">
+              <button type="button" class="btn-text" id="btn-step-3-back">
+                <span aria-hidden="true">←</span> Volver
+              </button>
+              <button type="button" class="btn btn-primary" id="btn-calculate">
+                Calcular mi Perfil Vehicular <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ESTADO DE CARGA (HU-26) -->
+          <div class="wizard-view hidden loading-view" id="step-loading" role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <h2 class="wizard-title">Calculando tu perfil vehicular...</h2>
+            <p class="wizard-desc">Cruzando tus prioridades y presupuesto con el mercado peruano de segunda mano.</p>
+          </div>
+
+          <!-- PANTALLA DE RESULTADOS (HU-11, HU-12, HU-13, HU-14, HU-17, HU-18, HU-31, HU-39, HU-42) -->
+          <div class="wizard-view hidden" id="step-results" role="region" aria-labelledby="results-title">
+            <div class="results-banner">
+              <div>
+                <p class="eyebrow eyebrow-mint">ANÁLISIS COMPLETADO</p>
+                <h2 id="results-title" class="results-banner-title">Encontramos tu perfil vehicular</h2>
+                <p class="results-banner-desc" id="results-range-desc">
+                  Estas opciones equilibran mejor tus prioridades, presupuesto y el mercado peruano.
+                </p>
+              </div>
+              <div class="results-summary-box">
+                <div class="summary-badges" id="results-filter-badges"></div>
+                <button type="button" class="btn-link-light" id="btn-edit-search">Editar prioridades</button>
+              </div>
+            </div>
+
+            <!-- Estado vacío (HU-17) -->
+            <div class="empty-state hidden" id="results-empty" role="alert">
+              <h3>No encontramos modelos que encajen exactamente con ese filtro</h3>
+              <p id="empty-state-reason">
+                Con la carrocería y el presupuesto ingresados, el mercado peruano actual no registra unidades viables dentro del margen del 15%.
+              </p>
+              <div class="empty-actions">
+                <button type="button" class="btn btn-primary" id="btn-empty-budget">Ajustar presupuesto</button>
+                <button type="button" class="btn btn-secondary" id="btn-empty-body">Cambiar carrocería</button>
+              </div>
+            </div>
+
+            <!-- Barra de resultados + Comparador (HU-31) -->
+            <div id="results-content">
+              <div class="results-toolbar">
+                <div>
+                  <p class="eyebrow">MEJORES COINCIDENCIAS</p>
+                  <h3 class="results-subtitle">Tus recomendaciones ordenadas por compatibilidad</h3>
+                </div>
+                <button type="button" class="btn btn-secondary" id="btn-open-compare" disabled>
+                  Comparar seleccionados (<span id="compare-count">0</span>/2)
+                </button>
+              </div>
+
+              <div class="results-grid" id="results-grid">
+                <!-- Tarjetas generadas por JS -->
+              </div>
+
+              <!-- Aviso explícito de atributo a ceder (HU-13, HU-14) -->
+              <aside class="tension-card hidden" id="tension-alert" role="note" aria-labelledby="tension-title">
+                <div class="tension-icon" aria-hidden="true">!</div>
+                <div class="tension-body">
+                  <p class="eyebrow eyebrow-accent">TAMBIÉN DEBES SABER ESTO</p>
+                  <h3 id="tension-title">Hay una tensión entre tus prioridades y tu presupuesto</h3>
+                  <p id="tension-message"></p>
+                </div>
+                <button type="button" class="btn btn-secondary" id="btn-adjust-priorities">
+                  Reajustar prioridades <span aria-hidden="true">→</span>
+                </button>
+              </aside>
+            </div>
+          </div>
+
+          <!-- PANTALLA DE FICHA DE DETALLE (HU-15, HU-16, HU-23, HU-39, HU-40, HU-42, HU-43, HU-44) -->
+          <div class="wizard-view hidden" id="step-detail" role="region" aria-labelledby="detail-model-name">
+            <button type="button" class="btn-text detail-back-btn" id="btn-back-to-results">
+              <span aria-hidden="true">←</span> Volver a resultados
+            </button>
+
+            <div class="detail-hero">
+                <div class="detail-photo-banner hidden" id="detail-photo-banner">
+              <img id="detail-car-img" src="" alt="">
+            </div>
+              <div class="detail-hero-info">
+                <p class="eyebrow eyebrow-mint" id="detail-eyebrow">COINCIDENCIA RECOMENDADA</p>
+                <h2 id="detail-model-name" class="detail-title">Modelo</h2>
+                <p id="detail-years" class="detail-years">Años</p>
+                <div class="detail-badges">
+                  <span class="badge badge-dark-outline" id="detail-price-badge">S/ 0</span>
+                  <span class="badge badge-dark-outline" id="detail-body-badge">Carrocería</span>
+                  <button type="button" class="badge badge-action" id="btn-copy-detail-model">
+                    Copiar modelo para buscar
+                  </button>
+                </div>
+              </div>
+
+              <div class="compat-ring-wrap" id="detail-compat-ring" aria-label="Porcentaje de compatibilidad">
+                <!-- Anillo SVG inyectado por JS -->
+              </div>
+            </div>
+
+            <!-- Bloque destacado de consumo y advertencia mecánica (HU-43, HU-44) -->
+            <div class="detail-highlights">
+              <div class="consumption-card">
+                <div class="consumption-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M15 10h2a2 2 0 0 1 2 2v5a2 2 0 0 0 2 2v0a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L19 5"/><path d="M6 10h6"/><path d="M2 22h14"/></svg>
+                </div>
+                <div>
+                  <p class="eyebrow">CONSUMO ESTIMADO</p>
+                  <p class="consumption-main" id="detail-consumption-main">-- km/gal</p>
+                  <p class="consumption-breakdown" id="detail-consumption-breakdown">Urbano · Carretera · Mixto</p>
+                </div>
+              </div>
+
+              <div class="maintenance-alert-wrap hidden" id="detail-complex-wrap">
+                <button type="button" class="badge badge-warning-btn" id="btn-toggle-complex-info" aria-expanded="false">
+                  ⚠ Requiere mantenimiento especializado (ver motivo)
+                </button>
+                <p class="complex-note hidden" id="detail-complex-reason"></p>
+              </div>
+            </div>
+
+            <!-- Dos columnas: Ficha técnica y Soporte en Perú -->
+            <div class="detail-grid">
+              <article class="detail-card">
+                <p class="eyebrow">01 · DATOS CLAVE</p>
+                <h3>Ficha técnica</h3>
+                <dl class="specs-list" id="detail-specs-list">
+                  <!-- Rellenado por JS -->
+                </dl>
+                <div class="factors-box">
+                  <p class="factors-title">Por qué encaja contigo:</p>
+                  <div class="summary-chips" id="detail-match-factors"></div>
+                </div>
+              </article>
+
+              <div class="detail-right-col">
+                <article class="detail-card">
+                  <p class="eyebrow">02 · MERCADO LOCAL</p>
+                  <h3>Soporte en Perú</h3>
+                  <p id="detail-support-text" class="support-text"></p>
+                  <div class="support-meter">
+                    <span>Disponibilidad de repuestos</span>
+                    <strong id="detail-support-level">Alta</strong>
+                  </div>
+                </article>
+
+                <article class="tip-card">
+                  <div class="tip-icon" aria-hidden="true">!</div>
+                  <div>
+                    <p class="eyebrow eyebrow-accent">TIP DE COMPRA</p>
+                    <h4 id="detail-tip-title">Punto clave a revisar</h4>
+                    <p id="detail-tip-text"></p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Barra inferior de acciones (HU-23, HU-40) -->
+            <div class="detail-footer">
+              <div>
+                <strong>¿Este perfil te sirve?</strong>
+                <p class="footer-hint">Guárdalo en este navegador para consultarlo cuando revises anuncios.</p>
+              </div>
+              <div class="detail-footer-actions">
+                <button type="button" class="btn btn-secondary" id="btn-save-result">
+                  Guardar este resultado
+                </button>
+                <button type="button" class="btn-text" id="btn-detail-restart">
+                  Volver a buscar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Preguntas Frecuentes / FAQ (HU-41) -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <p class="eyebrow">DUDAS COMUNES</p>
+        <h2 id="faq-title" class="section-title">Preguntas frecuentes</h2>
+
+        <div class="faq-list" id="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>¿V-TEC vende autos directamente o cobra comisión?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>No. V-TEC es una herramienta imparcial de pre-selección gratuita. Te ayudamos a definir qué modelos exactos convienen a tu bolsillo y rutina antes de que salgas a buscarlos por tu cuenta en Neoauto, Marketplace o concesionarios.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>¿Por qué muestran opciones hasta 15% por encima de mi presupuesto?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>En el mercado peruano de segunda mano los precios publicados suelen ser negociables. Aplicar un margen de flexibilidad del ±15% evita dejar fuera modelos confiables que podrías conseguir tras negociar, siempre indicándote cuáles están dentro de tu monto exacto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>¿Necesito saber de mecánica para usar el diagnóstico?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>Para nada. Solo eliges tu carrocería y priorizas conceptos cotidianos como comodidad, ahorro o trabajo pesado. El motor de V-TEC se encarga de traducir eso a criterios técnicos y soporte de repuestos en Perú.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>¿Qué hago después de obtener mi Ficha de Detalle?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>Puedes guardar el resultado en tu navegador o copiar el nombre exacto del modelo y sus años recomendados con un clic para buscar unidades reales con criterio técnico propio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto + Segundo CTA (HU-20, HU-21) -->
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">CONTACTO · TAGGLE INC.</p>
+          <h2 id="contact-title" class="section-title">¿Tienes alguna consulta sobre V-TEC?</h2>
+          <p class="section-subtitle">
+            Si deseas sugerir nuevos modelos del mercado peruano o resolver dudas sobre el diagnóstico, escríbenos directamente.
+          </p>
+          <div class="cta-box">
+            <h3>¿Listo para definir tu próximo vehículo?</h3>
+            <p>Completa el diagnóstico en menos de 3 minutos y evita decisiones a ciegas.</p>
+            <a href="#diagnostico" class="btn btn-primary" id="btn-start-secondary">
+              Iniciar diagnóstico <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Nombre completo *</label>
+            <input type="text" id="contact-name" name="name" placeholder="Ej. Mateo Quispe" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Correo electrónico *</label>
+            <input type="email" id="contact-email" name="email" placeholder="nombre@correo.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Mensaje *</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos tu duda o sugerencia..." required></textarea>
+          </div>
+
+          <p class="form-error" id="contact-error" role="alert" aria-live="assertive"></p>
+          <p class="form-success hidden" id="contact-success" role="status" aria-live="polite"></p>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar consulta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand">
+          <span class="brand-badge" aria-hidden="true">V</span>
+          <span class="brand-name">V-TEC</span>
+        </div>
+        <p class="footer-copy">Desarrollado por Taggle Inc. · Proyecto académico UPC (HCI for UX Design).</p>
+      </div>
+      <div class="footer-links">
+        <button type="button" class="footer-link-btn" data-legal="terminos">Términos y Condiciones</button>
+        <button type="button" class="footer-link-btn" data-legal="privacidad">Aviso de Privacidad</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Comparador de Modelos (HU-31) -->
+  <div class="modal-backdrop hidden" id="modal-compare" role="dialog" aria-modal="true" aria-labelledby="compare-modal-title">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3 id="compare-modal-title">Comparación lado a lado</h3>
+        <button type="button" class="modal-close" data-close-modal="modal-compare" aria-label="Cerrar comparador">×</button>
+      </div>
+      <div class="modal-body" id="compare-modal-body">
+        <!-- Tabla generada por JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Confirmación de Reinicio (HU-40) -->
+  <div class="modal-backdrop hidden" id="modal-reset" role="dialog" aria-modal="true" aria-labelledby="reset-modal-title">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-header">
+        <h3 id="reset-modal-title">¿Reiniciar diagnóstico?</h3>
+        <button type="button" class="modal-close" data-close-modal="modal-reset" aria-label="Cerrar aviso">×</button>
+      </div>
+      <div class="modal-body">
+        <p>Se borrarán tus selecciones actuales de carrocería, prioridades y presupuesto para iniciar una búsqueda limpia desde el paso 1.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal="modal-reset">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="btn-confirm-reset">Sí, reiniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Legal -->
+  <div class="modal-backdrop hidden" id="modal-legal" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-header">
+        <h3 id="legal-modal-title">Información legal</h3>
+        <button type="button" class="modal-close" data-close-modal="modal-legal" aria-label="Cerrar ventana legal">×</button>
+      </div>
+      <div class="modal-body" id="legal-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Notificación Toast (HU-39, HU-23) -->
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
